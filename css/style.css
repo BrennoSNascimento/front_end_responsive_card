@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fundo
+{
+    width: 100%;
+    height: 100vh;
+    background-color:hsl(210, 70%, 90%);
+    position: relative;
+}
+
+.container
+{
+    width: 600px;
+    height: 400px;
+    /*border: 1px solid black;*/
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    border-radius: 4%;
+    overflow: hidden;
+    border-width: 4px;
+	border-color: rgba(120,120,120,0.1);
+	border-style: solid;
+   
+}
+
+.box1
+{
+    width: 100%;
+    height: 40%;
+    /*border: 1px solid black;*/
+    background-color: white;
+    position: absolute;
+}
+
+.box2
+{
+    width: 50%;
+    height: 60%;
+    /*border: 1px solid black;*/
+    position: absolute;
+    bottom: 0;
+    background-color: hsl(179, 62%, 43%);
+
+}
+
+.box3
+{
+    width: 50%;
+    height: 60%;
+    /*border: 1px solid black;*/
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: hsl(179, 64%, 66%);
+
+}
+
+.txt-box
+{
+    width: 80%;
+    height: 70%;
+    /*border: 1px solid black;*/
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    text-align: justify;
+}
+
+.txt-box > h3
+{
+    color:  hsl(179, 91%, 43%);
+    margin-bottom: 15px;
+}
+
+.txt-box > .p1
+{
+    color: lawngreen;
+    margin-bottom: 10px;
+}
+
+.txt-box > .p2
+{
+    opacity: 0.3;
+}
+
+.txt-box2
+{
+    width: 80%;
+    height: 50%;
+    /*border: 1px solid black;*/
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    color: white;
+}
+
+.txt-box2 > .p1
+{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.txt-box2 > .p2 
+{
+    font-size: 22px;
+    margin-right: 10px;
+    opacity: initial;
+}
+
+.txt-box2 > span
+{
+    opacity: 0.5;
+}
+
+.txt-box2 > .p3
+{
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.botao
+{
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    /*border: 1px solid black;*/
+    bottom: 12%;
+}
+
+.botao input[type = submit ]
+{
+       width: 60%;
+       height: 40%;
+       transform: translate(-50%,-50%);
+       left: 50%;
+       top: 50%;
+       position: absolute;
+       border-radius: 8%;
+       background-color: lawngreen;
+       color: white;
+       border-width: 4px;
+       border-color: rgba(120,120,120,0.2);
+       border-style: solid;
+}
+
+.txt-box3
+{
+    width: 80%;
+    height: 80%;
+    /*border: 1px solid black;*/
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    color: white;
+}
+
+.txt-box3 > .p1
+{
+    font-size: 16px;
+    margin-bottom: 20px;   
+}
+
+.txt-box3 > .p2
+{
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+@media screen and (max-width : 600px)
+{
+    .fundo
+    {
+        width: 100%;
+    }
+
+    .container
+    {
+        width: 50%;
+        height: 90%;
+        overflow: hidden;
+    }
+
+    .box1
+    {
+        width: 100%;
+        height: 30%;
+        display: inline-block;
+        
+    }
+    .txt-box
+    {
+        width: 90%;
+        height: 90%;
+        text-align: justify;
+        font-size: 13px;
+        padding: 2%;
+        left: 55%;
+    }
+
+    .box2
+    {
+        width: 100%;
+        height: 35%;
+        display: inline-block;
+        top: 30%;
+        
+    }
+
+    .txt-box2
+    {
+        width: 90%;
+        height: 90%;
+        text-align: justify;
+        font-size: 13px;
+        padding: 2%;
+    }
+
+    .txt-box2 > .p1
+    {
+        font-size: 13px;    
+    }
+
+    .txt-box2 > .p2 
+    {
+        font-size: 20px;
+    }
+
+    .txt-box2 > .p3
+    {
+        font-size: 13px;
+    }
+
+    .botao
+    {
+        width: 80%;
+        height: 40%;
+        left: 10%;
+        bottom: -5%;
+        
+    }
+
+    .botao input[type = submit ]
+    {
+        width: 100%;
+        height: 50%;
+    }
+
+    
+    .box3
+    {
+        width: 100%;
+        height: 35%;
+        display: inline-block;
+        bottom: 0;
+    }
+
+    .txt-box3
+    {
+        width: 90%;
+        height: 90%;
+        text-align: left;
+        padding: 2%;
+    }
+
+    .txt-box3 > .p1
+    {
+        font-size: 13px;
+    }
+
+    .txt-box3 > .p2
+    {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:400px)
+{
+    
+    .txt-box
+    {
+      font-size: 12px;
+    }
+
+    .txt-box2 > .p1
+    {
+        font-size: 12px;    
+    }
+
+    .txt-box2 > .p2 
+    {
+        font-size: 15px;
+    }
+
+    .txt-box2 > .p3
+    {
+        font-size: 12px;
+    }
+
+    .txt-box3 > .p1
+    {
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+
+    .txt-box3 > .p2
+    {
+        font-size: 12px;
+    }    
+
+}
+
+@media screen and (max-width:361px)
+{
+
+    .txt-box
+    {
+      font-size: 11px;
+    }
+
+    .txt-box2 > .p1
+    {
+        font-size: 11px;    
+    }
+
+    .txt-box2 > .p2 
+    {
+        font-size: 14px;
+    }
+
+    .txt-box2 > .p3
+    {
+        font-size: 11px;
+    }
+
+    .txt-box3 > .p1
+    {
+        margin-bottom: 5px;
+        font-size: 11px;
+    }
+
+    .txt-box3 > .p2
+    {
+        font-size: 11px;
+    }    
+
+
+
+}
